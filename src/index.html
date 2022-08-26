@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test1</title>
+    <script
+      src="https://kit.fontawesome.com/a7d2dd1d20.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- CheckBox isCheck -->
+      <input
+        type="checkbox"
+        class="dashboard__checkboxSidebar"
+        id="checkboxSidebar"
+      />
+
+      <!-- Navbar -->
+      <nav class="dashboard__navbar">
+        <h1 class="navbar__logo">Start Bootstrap</h1>
+        <div class="navbar__blockOptions">
+          <label for="checkboxSidebar" class="blockOptions__label">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <div class="blockOptions__search">
+            <input type="search" placeholder="Search.." class="search__input" />
+            <button class="search__button">
+              <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="navbar__dropdownUser">
+          <label class="dropdownUser__icons" for="dropdownUser">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-sort-down"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="dropdownUser"
+            class="dropdownUser__checkbox"
+          />
+          <div class="dropdownUser__options">Options for menu user</div>
+        </div>
+      </nav>
+
+      <!-- Sidebar -->
+
+      <aside class="dashboard__sidebar">
+        <div class="sidebar__menu">
+          <div class="sidebar__module">
+            <h5 class="module__title">CORE</h5>
+            <ul class="module__list">
+              <li class="module__item">
+                <a href="#" class="module__link">
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__module">
+            <h5 class="module__title">INTERFACE</h5>
+            <ul class="module__list">
+              <li class="module__item">
+                <a href="#" class="module__link">
+                  <i class="fa-solid fa-table-columns"></i>
+                  <span>Layouts</span>
+                </a>
+              </li>
+              <li class="module__item">
+                <a href="#" class="module__link">
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>Pages</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__module">
+            <h5 class="module__title">ADDONS</h5>
+            <ul class="module__list">
+              <li class="module__item">
+                <a href="#" class="module__link">
+                  <i class="fa-solid fa-chart-area"></i>
+                  <span>Charts</span>
+                </a>
+              </li>
+              <li class="module__item">
+                <a href="#" class="module__link">
+                  <i class="fa-solid fa-table-cells-large"></i>
+                  <span>Tables</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar__statusLogged">logged</div>
+      </aside>
+
+      <!-- Main -->
+      <div class="dashboard__main">HOLA</div>
+    </div>
+  </body>
+</html>

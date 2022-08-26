@@ -1,0 +1,32 @@
+@use "navbar/Navbar.scss";
+@use "sidebar/Sidebar.scss";
+@use "main/Main.scss";
+
+.dashboard {
+  background-color: aqua;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: [col-start] 14rem [col-middle] 1fr [col-end];
+  grid-template-rows: [row-start] 3.5rem [row-middle] 1fr [row-end];
+
+  //   Control del sidebar
+  &__checkboxSidebar {
+    display: none;
+  }
+
+  &__checkboxSidebar:checked ~ *.dashboard__main {
+    grid-area: row-middle/col-start/row-end/col-end;
+    animation: fadeOut 1s;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      width: calc(100% - 14rem);
+      transform: translateX(14rem);
+    }
+    100% {
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.dashboard__sidebar {
+  grid-area: sidebar;
+  grid-area: row-middle/col-start/row-end/col-middle;
+  background-color: #212529;
+
+  // propiedades del sidebar
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-end];
+  grid-template-rows: [row-start]1fr [row-middle]4.5rem[row-end];
+  color: #565758;
+}
+
+.sidebar {
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  &__module {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.module {
+  &__title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+
+  &__item {
+    padding-top: 1rem;
+  }
+
+  &__link {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  &__link:hover {
+    color: #f5f5f5;
+  }
+}
